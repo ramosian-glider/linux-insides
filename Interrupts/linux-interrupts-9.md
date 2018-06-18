@@ -43,7 +43,7 @@ $ systemd-cgls -k | grep ksoft
 ├─  43 [ksoftirqd/7]
 ```
 
-The `spawn_ksoftirqd` function starts this these threads. As we can see this function called as early [initcall](http://www.compsoc.man.ac.uk/~moz/kernelnewbies/documents/initcall/index.html):
+The `spawn_ksoftirqd` function starts these threads. As we can see this function called as early [initcall](http://www.compsoc.man.ac.uk/~moz/kernelnewbies/documents/initcall/index.html):
 
 ```C
 early_initcall(spawn_ksoftirqd);
